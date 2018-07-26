@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>SimpleServletApp</title>
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+
+  <body onload="controller();">
+    <div class="wrapper">
+      <div class="col-xs-3" style="height: 100vh; float:left; background-color: #aaa"></div>
+      <div class="col-xs-3" style="height: 100vh; float:right; background-color: #aaa"></div>
+      <div class="col-xs-6 content" style="margin: 0 auto; height: 100vh; padding-top: 10px">
+        <div class="buttons" align="center">
+          <input type="text" class="form-control" style="margin-bottom: 16px" id="msg-text" />
+          <button class="btn btn-success" onclick="send();">Send message</button>
+          <pre style="margin-top:20px" class="msg"></pre>
+
+	  <img src="./resources/01.jpg" />
+        </div>
+      </div>
+    </div>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+
+</html>
