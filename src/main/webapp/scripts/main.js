@@ -6,7 +6,7 @@ function send() {
 	msg = $("#msg-text").val();
 	console.log(msg);
 	$.ajax({
-		url: "http://tomcat/SimpleWebApp-1.0-SNAPSHOT/MainServlet",
+		url: "http://tomcat/SimpleWebApp/MainServlet",
 		method: "POST",
 		data: {
 			msg: msg
