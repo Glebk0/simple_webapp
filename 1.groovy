@@ -7,7 +7,7 @@ import org.apache.http.entity.*
 import hudson.model.*
 
 String[] pomParsing(def workspace) {
-    def pom = new XmlSlurper().parse(new File("/home/student/jenkins/SimpleWebApp/pom.xml"))
+    def pom = new XmlSlurper().parse(new File("pom.xml"))
     def list = []
     list.add(pom.groupId)
     list.add(pom.artifactId)
