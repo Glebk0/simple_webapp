@@ -27,7 +27,7 @@ void push() {
     def artifactId = gav[1]
     def version = gav[2].split('-')[0]
     def launch = restClient.put(
-            path: "http://nexus/repository/${repo}/${correct_path}/${buildNumber}/${artifactId}-1.${buildNumber}.war",
+            path: "http://nexus/repository/${repo}/${correct_path}/${buildNumber}/${artifactId}/${artifactId}-1.${buildNumber}.war",
             body: new File("target/${artifactId}-1.${buildNumber}.war"),
             requestContentType: 'application/zip'
     )
