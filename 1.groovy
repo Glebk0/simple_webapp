@@ -50,7 +50,7 @@ void pull() {
     def version = gav[2].split('-')[0]
     def restClient = new RESTClient("http://nexus/repository/${repo}/")
     restClient.auth.basic 'admin', 'admin123'
-    def launch = restClient.get(path: "http://nexus/repository/${repo}/${correct_path}/${buildNumber}/${artifactName}.war"
+    def launch = restClient.get(path: "http://nexus/repository/${repo}/${correct_path}/${artifactId}/1.${buildNumber}/${artifactId}-1.${buildNumber}.war"
     )
     new File("./${artifactId}.war") << launch.data
 }
